@@ -52,7 +52,7 @@
         <section class="hero">
         <div class="hero-box container">
             <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
-            <button type="button" class="hero-btn">Заказать услугу</button>
+            <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         </div>
         </section>
         <!--PRIORITY-->
@@ -105,13 +105,22 @@
             <div class="container">
             <ul class="work-list">
                 <li class="work-list-item">
-                    <img class="work-img" src="./images/work/work1.jpg" alt="Печатает код" width="370" height="294">
+                    <div class="work-thumb">
+                        <img class="work-img" src="./images/work/work1.jpg" alt="Печатает код" width="370" height="294">
+                        <p class="work-img-title">Десктопные приложения</p>
+                    </div>
                 </li>
                 <li class="work-list-item">
-                    <img class="work-img" src="./images/work/work2.jpg" alt="Синхронизирует девайсы" width="370" height="294">
+                    <div class="work-thumb">
+                        <img class="work-img" src="./images/work/work2.jpg" alt="Синхронизирует девайсы" width="370" height="294">
+                        <p class="work-img-title">Мобильные приложения</p>
+                    </div>
                 </li>
                 <li class="work-list-item">
-                    <img class="work-img" src="./images/work/work3.jpg" alt="Подбирает цвет" width="370" height="294">
+                    <div class="work-thumb">
+                        <img class="work-img" src="./images/work/work3.jpg" alt="Подбирает цвет" width="370" height="294">
+                        <p class="work-img-title">Дизайнерские решения</p>
+                    </div>
                 </li>
             </ul>
             </div>
@@ -380,5 +389,20 @@
             </div>
         </div>
     </footer>
+
+
+
+
+    <div class="backdrop is-hidden">
+        <div class="modal" data-modal>
+            <button type="button" class="close-btn">
+                <svg class="close">
+                    <use href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
